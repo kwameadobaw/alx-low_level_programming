@@ -11,12 +11,12 @@ int main(void)
 	{
 		for (b = a; b <= 99; b++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
+			putchar(a / 10 + '0');
+			putchar(a % 10 + '0');
 			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-			if (i != 99 || j != 99)
+			putchar(b / 10 + '0');
+			putchar(b % 10 + '0');
+			if (a != 99 || b != 99)
 			{
 				purchar(',');
 				putchar(' ');
