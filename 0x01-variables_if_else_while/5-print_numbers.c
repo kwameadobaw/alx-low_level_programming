@@ -9,7 +9,7 @@ int main(void)
 
 	for (a = 0; a <= 9; a++)
 	{
-		print("%d", a);
+		printf("%d", a);
 	}
 	printf("\n");
 	return (0);
