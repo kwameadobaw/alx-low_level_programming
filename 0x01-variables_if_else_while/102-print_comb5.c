@@ -18,7 +18,7 @@ int main(void)
 			putchar(b % 10 + '0');
 			if (a != 99 || b != 99)
 			{
-				purchar(',');
+				putchar(',');
 				putchar(' ');
 			}
 		}
