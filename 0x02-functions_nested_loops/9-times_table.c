@@ -26,13 +26,13 @@ void times_table(void)
 			}
 			else
 			{
-				if (y != 0)
+				if (b != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
-				_putchar(z + '0');
+				_putchar(result + '0');
 			}
 		}
 		_putchar('\n');
