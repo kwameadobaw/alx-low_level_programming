@@ -23,6 +23,6 @@ int main(void)
 		num1 = num2;
 		num2 = next_term;
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return (0);
 }
