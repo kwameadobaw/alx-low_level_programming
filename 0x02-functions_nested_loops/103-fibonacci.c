@@ -10,6 +10,7 @@ int main(void)
 	int num2 = 2;
 	int sum = 0;
 	int limit = 4000000;
+	int next_term;
 
 	while (num1 <= limit)
 	{
@@ -17,7 +18,7 @@ int main(void)
 		{
 			sum = sum + num1;
 		}
-		int next_term = num1 + num2;
+		next_term = num1 + num2;
 
 		num1 = num2;
 		num2 = next_term;
