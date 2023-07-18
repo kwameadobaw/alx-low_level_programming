@@ -4,7 +4,9 @@
  *
  * @n : The number to be checked
  *
- * Return: 1 if the number is positive or -1 if the number is negative or otherwise
+ * Return: 1 if the number is positive or 
+ *
+ * -1 if the number is negative or otherwise
  */
 int print_sign(int n)
 {
