@@ -15,7 +15,6 @@ void times_table(void)
 			product = row * column;
 
 			_putchar(product + '0');
-			
 		}
 		_putchar('\n');
 	}
