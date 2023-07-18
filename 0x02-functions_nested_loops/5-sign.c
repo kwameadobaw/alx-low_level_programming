@@ -4,7 +4,7 @@
  *
  * @n : The number to be checked
  *
- * Return: 1 if the number is positive or 
+ * Return: 1 if the number is positive or
  *
  * -1 if the number is negative or otherwise
  */
