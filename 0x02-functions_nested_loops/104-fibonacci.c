@@ -13,13 +13,13 @@ void print_fib_sequence(int limit)
 	unsigned long int a = 1, b = 2, c;
 	int count = 0;
 
-	printf("%ld, %ld", a, b);
+	printf("%lu, %lu", a, b);
 	count += 2;
 
 	while (count < limit)
 	{
 		c = a + b;
-		printf(", %ld", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 		count++;
