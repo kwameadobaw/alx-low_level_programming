@@ -10,7 +10,7 @@
  */
 void print_fib_sequence(int limit)
 {
-	long int a = 1, b = 2, c;
+	unsigned long int a = 1, b = 2, c;
 	int count = 0;
 
 	printf("%ld, %ld", a, b);
