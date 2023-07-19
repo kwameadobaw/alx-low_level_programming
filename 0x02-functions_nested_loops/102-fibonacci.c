@@ -7,23 +7,23 @@
   */
 int main(void)
 {
-	int i = 1;
-	long j = 1, k = 2;
+	int a = 1;
+	long b = 1, c = 2;
 
-	while (i <= 50)
+	while (a <= 50)
 	{
-		if (i == 1)
-			printf("%ld", j);
+		if (a == 1)
+			printf("%ld", b);
 		else if (i == 2)
-			printf(", %ld", k);
+			printf(", %ld", c);
 		else
 		{
-			k = k + j;
-			j = k - j;
-			printf(", %ld", k);
+			c = c + b;
+			b = c - b;
+			printf(", %ld", c);
 		}
 
-		++i;
+		++a;
 	}
 
 	printf("\n");
