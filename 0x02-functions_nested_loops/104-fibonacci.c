@@ -2,34 +2,37 @@
 /**
  * main - Entry point
  *
- * @count: The number of times it should print
+ * print_fib_sequence - Print the Fibonacci sequence up to limit
  *
- * print_fibonacci_sequence: Print Fibonacci sequence
+ * @limit: the number of times to print sequence
  *
- * Return: Always 0 (Suceess)
+ * Return: Always 0 (Success)
  */
-void print_fibonacci_sequence(int count)
+void print_fib_sequence(int limit)
 {
-	int num1 = 1;
-	int num2 = 2;
-	int result;
-	int i;
+	long long int a = 1, b = 2, c;
+	int count = 0;
 
-	printf("%d, %d", num1, num2);
-	for (i = 3; i <= count; i++)
+	printf("%lld, %lld", a, b);
+	count += 2;
+
+	while (count < limit)
 	{
-		result = num1 + num2;
-		printf(", %d", result);
-		num1 = num2;
-		num2 = result;
+		c = a + b;
+		printf(", %lld", c);
+		a = b;
+		b = c;
+		count++;
 	}
+
 	printf("\n");
 }
+
 int main(void)
 {
-	int count = 98;
+	int limit = 98;
 
-	print_fibonacci_sequence(count);
+	print_fib_sequence(limit);
 
 	return (0);
 }
