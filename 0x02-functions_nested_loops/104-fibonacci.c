@@ -10,16 +10,16 @@
  */
 void print_fib_sequence(int limit)
 {
-	long long int a = 1, b = 2, c;
+	long int a = 1, b = 2, c;
 	int count = 0;
 
-	printf("%lld, %lld", a, b);
+	printf("%ld, %ld", a, b);
 	count += 2;
 
 	while (count < limit)
 	{
 		c = a + b;
-		printf(", %lld", c);
+		printf(", %ld", c);
 		a = b;
 		b = c;
 		count++;
