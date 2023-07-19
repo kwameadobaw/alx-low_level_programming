@@ -14,7 +14,7 @@ int main(void)
 	{
 		if (a == 1)
 			printf("%ld", b);
-		else if (i == 2)
+		else if (a == 2)
 			printf(", %ld", c);
 		else
 		{
