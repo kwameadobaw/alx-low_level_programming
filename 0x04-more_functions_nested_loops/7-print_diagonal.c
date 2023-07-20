@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_diagonal - used to print a line.
  *
@@ -11,6 +11,7 @@ void print_diagonal(int n)
 	if (n <= 0)
 	{
 		_putchar('\n');
+		return (n);
 	}
 	for (int i = 0; i < n; i++)
 	{
