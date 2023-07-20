@@ -20,7 +20,15 @@ int main(void)
 		}
 		else if (x % 5 == 0)
 		{
+			if (x == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+			{
 			printf("Buzz ");
+			}
 		}
 		else
 		{
