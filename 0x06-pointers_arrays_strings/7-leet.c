@@ -12,17 +12,16 @@ char *leet(char *str)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
+		while (str[i] == 'a' || str[i] == 'A')
+			str[i] = '4';
+		while (str[i] == 'e' || str[i] == 'E')
+			str[i] = '3';
+		while (str[i] == 'o' || str[i] == 'O')
 			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		while (str[i] == 't' || str[i] == 'T')
+			str[i] = '7';
+		while (str[i] == 'l' || str[i] == 'L')
+			str[i] = '1';
 	}
-
-	return (s);
+	return (str);
 }
