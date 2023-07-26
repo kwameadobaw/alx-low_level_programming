@@ -30,7 +30,7 @@ char *cap_string(char *str)
 			trigger = 0;
 		else if (str[x] >= 'A' && str[x] <= 'Z')
 			trigger = 0;
-		else if(str[x] >= '0' && str[x] <= '9')
+		else if (str[x] >= '0' && str[x] <= '9')
 			trigger = 0;
 	}
 	return (str);
