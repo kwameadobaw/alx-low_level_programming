@@ -2,27 +2,25 @@
 /**
  * leet - encodes a string to leetcode
  *
- * @s: The string to be converted
+ * @str: The string to be converted
  *
  * Return: Return the converted string
  */
-char *leet(char *s)
+char *leet(char *str)
 {
-	int i;
+	char *x = str;
+	char alpha[] = {'a', 'e', 'o', 't', 'l'};
+	char num[] = {4, 3, 0, 7, 1};
+	int y = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*str != '\0')
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		else if (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		else if (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		else if (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		else if (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		for (y = 0; y < 5; y++)
+		{
+			if (*str == alpha[y] || *str == alpha[y] - 32)
+				*str = num[y] + '0';
+		}
+		str++;
 	}
-
-	return (s);
+	return (x);
 }
