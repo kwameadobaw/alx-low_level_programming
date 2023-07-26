@@ -26,12 +26,18 @@ char *cap_string(char *str)
 	if (trigger == 1)
 	{
 		if (str[x] >= 'a' && str[x] <= 'z')
+		{
 			str[x] = str[x] - 32;
 			trigger = 0;
+		}
 		else if (str[x] >= 'A' && str[x] <= 'Z')
+		{
 			trigger = 0;
+		}
 		else if (str[x] >= '0' && str[x] <= '9')
+		{
 			trigger = 0;
+		}
 	}
 	return (str);
 }
