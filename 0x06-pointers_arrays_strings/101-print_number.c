@@ -19,10 +19,10 @@ void print_number(int n)
 	{
 		div = div * 10;
 	}
-	while (divisor > 0)
+	while (div > 0)
 	{
-		_putchar('0' + (n / divisor));
-		n %= divisor;
-		divisor /= 10;
+		_putchar('0' + (n / div));
+		n %= div;
+		div /= 10;
 	}
 }
