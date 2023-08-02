@@ -10,7 +10,7 @@ int checker(int a, int base)
 		return (a);
 	if (a * a > base)
 		return (-1);
-	return (checker((n + 1), base));
+	return (checker((a + 1), base));
 }
 int _sqrt_recursion(int n)
 {
