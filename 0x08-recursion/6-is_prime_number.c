@@ -6,7 +6,7 @@
   */
 int checker(int a, int base)
 {
-	if (base % n ==0 || base < 2)
+	if (base % a ==0 || base < 2)
 		return (0);
 	else if (n == base - 1)
 		return (1);
