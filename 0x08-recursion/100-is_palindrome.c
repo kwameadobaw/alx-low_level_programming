@@ -9,7 +9,7 @@ int _string_length_recursion(char *s)
 	if (*s)
 	{
 		s++;
-		return (1 + _stringlength_recursion(s));
+		return (1 + _string_length_recursion(s));
 	}
 	return (0);
 }
