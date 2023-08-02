@@ -1,3 +1,4 @@
+#include "main.h"
 /**
   * checker - checks recursively the input from is_prime_number
   * @a: iterator
@@ -6,7 +7,7 @@
   */
 int checker(int a, int base)
 {
-	if (base % a ==0 || base < 2)
+	if (base % a == 0 || base < 2)
 		return (0);
 	else if (a == base - 1)
 		return (1);
