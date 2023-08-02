@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * checker - checks the input number from n to the base
  * @a: number is squared and compared against base
