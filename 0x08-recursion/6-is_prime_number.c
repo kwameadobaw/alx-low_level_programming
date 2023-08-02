@@ -8,10 +8,10 @@ int checker(int a, int base)
 {
 	if (base % a ==0 || base < 2)
 		return (0);
-	else if (n == base - 1)
+	else if (a == base - 1)
 		return (1);
-	else if (base > n)
-		return (checker(n + 1, base));
+	else if (base > a)
+		return (checker(a + 1, base));
 	return (1);
 }
 /**
