@@ -13,7 +13,7 @@
 int check_int(int argc, int x, unsigned int y, char *argv[])
 {
 	for (x = 1; x <= argc; x++)
-		for (y = 0; argv[x] != '\0' && y < strlen(argv[x]); y++)
+		for (y = 0; *argv[x] != '\0' && y < strlen(argv[x]); y++)
 			if (isdigit(argv[x][y]) == 0)
 				return (1);
 	return (0);
