@@ -32,6 +32,6 @@ char *argstostr(int ac, char **av)
 		result[current_position] = '\n';
 		current_position++;
 	}
-	result[current_position - 1] = '\0'
+	result[current_position - 1] = '\0';
 	return (result);
 }
