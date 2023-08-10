@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
   * _calloc - allocates memory for an initialized buffer
   * @nmemb: number of memory bytes
