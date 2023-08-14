@@ -3,7 +3,7 @@
 #include "dog.h"
 /**
  * print_dog - Prints struct dog
- * @d- Object to dog
+ * @d: Object to dog
  * Return: Always 0
  */
 void print_dog(struct dog *d)
