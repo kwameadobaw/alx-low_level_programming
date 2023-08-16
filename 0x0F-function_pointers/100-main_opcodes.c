@@ -26,9 +26,12 @@ int main(int argc, char *argv[])
 	op_codes = (unsigned char *)main;
 	for (z = 0; z < number_of_bytes; z++)
 	{
+		if (z == number_of_bytes - 1)
+		{
+			printf("%02hhx\n", op_codes[z]);
+			break;
+		}
 		printf("%02hhx ", op_codes[z]);
 	}
-	printf("\n");
-	free(op_codes);
 	return (0);
 }
