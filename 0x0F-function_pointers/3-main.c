@@ -2,7 +2,9 @@
 #include "3-calc.h"
 /**
  * main - entry point
- *
+ * @argc: number of arguments
+ * @argv: Pointer to array
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
