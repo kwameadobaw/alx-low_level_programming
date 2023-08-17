@@ -13,12 +13,12 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
+	sum = 0;
 
 	va_start(numbers, n);
-	sum = 0;
 
 	for (num = 0; num < n; num++)
 		sum = sum + va_arg(numbers, unsigned int);
 	va_end(numbers);
-	return (0);
+	return (sum);
 }
