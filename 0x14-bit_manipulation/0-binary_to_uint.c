@@ -7,11 +7,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result;
-	unsigned int power;
 	int a;
 
 	result = 0;
-	power = 1;
 	if (b == NULL)
 		return (0);
 	a = 0;
